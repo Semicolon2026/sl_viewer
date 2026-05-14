@@ -6,7 +6,7 @@ WORKDIR /app
 RUN yum install -y \
     python3 \
     python3-pip \
-    rsync-3.2.5-3.el9 && \
+    rsync && \
     yum clean all
 
 COPY requirements.txt .
