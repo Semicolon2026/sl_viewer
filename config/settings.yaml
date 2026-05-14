@@ -1,0 +1,12 @@
+---
+
+app:
+  name: sl_viewer
+  environment: testing
+
+scan:
+  target_file: data/sample_targets.txt
+  generate_report: true
+
+report:
+  output_dir: reports/
