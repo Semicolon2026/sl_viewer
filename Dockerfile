@@ -18,6 +18,6 @@ COPY config/ ./config/
 COPY data/ ./data/
 COPY scripts/ ./scripts/
 
-RUN chmod +x scripts/run.sh scripts/healthcheck.sh
+RUN chmod +x scripts/run.sh 
 
 CMD ["./scripts/run.sh"]
