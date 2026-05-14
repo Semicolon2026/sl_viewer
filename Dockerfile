@@ -8,7 +8,7 @@ ENV PYTHONPATH=/app
 RUN yum install -y \
     python3 \
     python3-pip \
-    rsync && \
+    rsync-3.2.5-3.el9 && \
     yum clean all
 
 COPY requirements.txt .
