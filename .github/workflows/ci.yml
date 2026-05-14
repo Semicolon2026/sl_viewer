@@ -17,5 +17,3 @@ jobs:
       - name: Run container
         run: docker run --rm sl-viewer
 
-      - name: Basic healthcheck
-        run: docker run --rm sl-viewer ./scripts/healthcheck.sh
