@@ -2,6 +2,8 @@ FROM registry.access.redhat.com/ubi9/ubi
 
 WORKDIR /app
 
+ENV PYTHONPATH=/app
+
 # Install Python + intentionally vulnerable rsync package
 RUN yum install -y \
     python3 \
