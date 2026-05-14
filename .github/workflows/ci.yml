@@ -9,10 +9,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Build container
+      - name: Build image
         run: docker build -t sl-viewer .
 
       - name: Run container
         run: docker run --rm sl-viewer
+
+      - name: Basic healthcheck
+        run: docker run --rm sl-viewer ./scripts/healthcheck.sh
